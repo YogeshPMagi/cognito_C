@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-
-
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+  const MainScreen({super.key}); // Use super parameter here
 
   @override
   Widget build(BuildContext context) {
@@ -41,13 +39,11 @@ class MainScreen extends StatelessWidget {
                   radius: 50,
                   backgroundColor: Color(0xFF454A60),
                   child: Icon(
-            Iconsax.profile_circle,
-            size: 50,
-            color: Colors.blue,
-          ),
+                    Iconsax.profile_circle,
+                    size: 50,
+                    color: Colors.blue,
+                  ),
                 ),
-                const SizedBox(height: 10),
-
                 const SizedBox(height: 10),
                 const Text(
                   'Welcome to AI Chat',
@@ -57,8 +53,6 @@ class MainScreen extends StatelessWidget {
                     color: Color(0xFF454A60),
                   ),
                 ),
-                const SizedBox(height: 5),
-
                 const SizedBox(height: 20),
 
                 // Search Bar
@@ -202,7 +196,7 @@ class MainScreen extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                             Expanded(
+                              Expanded(
                                 child: Text(
                                   'Brief summary of the conversation goes here...',
                                   style: TextStyle(

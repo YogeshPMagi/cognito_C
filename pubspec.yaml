@@ -10,10 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
   provider: ^6.1.2
+  iconsax: ^0.0.8
+  google_fonts: ^5.0.0
   
-  cupertino_icons: ^1.0.6
-  iconsax:  ^0.0.8
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
